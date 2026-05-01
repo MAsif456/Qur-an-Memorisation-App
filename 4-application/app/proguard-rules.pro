@@ -1,21 +1,25 @@
-# Add project specific ProGuard rules here.
-# You can control the set of applied configuration files using the
-# proguardFiles setting in build.gradle.
+# ProGuard rules for the Quran Memoriser app.
 #
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
+# Release builds keep minifyEnabled = false (declared in app/build.gradle), so
+# these rules are advisory rather than load-bearing. They are included as a
+# defensive belt for any consumer who flips minification on later.
 
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
+# Keep line numbers for stack-trace clarity, but redact the source filename.
+-keepattributes SourceFile,LineNumberTable
+-renamesourcefileattribute SourceFile
 
-# Uncomment this to preserve the line number information for
-# debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
+# Moshi reads Kotlin metadata via reflection; preserve the data classes used
+# by the Quran.com API parser.
+-keep class com.example.mob_dev_portfolio.data.remote.dto.** { *; }
 
-# If you keep the line number information, uncomment this to
-# hide the original source file name.
-#-renamesourcefileattribute SourceFile
+# Hilt-generated components and modules are referenced by reflection; do not
+# strip them.
+-keep,allowobfuscation,allowshrinking class dagger.hilt.** { *; }
+
+# Coroutines emits internal classes referenced via reflection by debug tools.
+-dontwarn kotlinx.coroutines.debug.internal.**
+
+# OkHttp/Retrofit are well behaved under R8 from version 4 onwards but the
+# logging interceptor reflectively accesses platform classes.
+-dontwarn okhttp3.internal.platform.**
+-dontwarn org.conscrypt.**
