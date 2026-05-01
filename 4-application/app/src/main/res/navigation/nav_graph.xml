@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mob_dev_portfolio.ui.home.HomeFragment"
+        android:label="@string/home_title"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_surahDetail"
+            app:destination="@id/surahDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/surahListFragment"
+        android:name="com.example.mob_dev_portfolio.ui.surahs.SurahListFragment"
+        android:label="@string/surahs_title"
+        tools:layout="@layout/fragment_surah_list">
+        <action
+            android:id="@+id/action_surahList_to_surahDetail"
+            app:destination="@id/surahDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/surahDetailFragment"
+        android:name="com.example.mob_dev_portfolio.ui.surahs.SurahDetailFragment"
+        android:label="@string/surahs_title"
+        tools:layout="@layout/fragment_surah_detail">
+        <argument
+            android:name="surahNumber"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_surahDetail_to_recitation"
+            app:destination="@id/recitationSheetFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/recitationSheetFragment"
+        android:name="com.example.mob_dev_portfolio.ui.recitation.RecitationSheetFragment"
+        android:label="@string/recitation_sheet_title"
+        tools:layout="@layout/fragment_recitation_sheet">
+        <argument
+            android:name="surahNumber"
+            app:argType="integer" />
+        <argument
+            android:name="ayahNumber"
+            app:argType="integer" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/trackerFragment"
+        android:name="com.example.mob_dev_portfolio.ui.tracker.TrackerFragment"
+        android:label="@string/tracker_title"
+        tools:layout="@layout/fragment_tracker" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.mob_dev_portfolio.ui.settings.SettingsFragment"
+        android:label="@string/settings_title"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

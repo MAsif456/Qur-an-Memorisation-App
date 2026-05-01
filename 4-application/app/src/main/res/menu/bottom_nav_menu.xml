@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_nav_home"
+        android:title="@string/nav_home" />
+    <item
+        android:id="@+id/surahListFragment"
+        android:icon="@drawable/ic_nav_surahs"
+        android:title="@string/nav_surahs" />
+    <item
+        android:id="@+id/trackerFragment"
+        android:icon="@drawable/ic_nav_tracker"
+        android:title="@string/nav_tracker" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_nav_settings"
+        android:title="@string/nav_settings" />
+</menu>

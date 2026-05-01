@@ -1,3 +1,102 @@
 <resources>
-    <string name="app_name">mob-dev-portfolio</string>
+    <string name="app_name">Quran Memoriser</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_surahs">Surahs</string>
+    <string name="nav_tracker">Tracker</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Common -->
+    <string name="action_retry">Retry</string>
+    <string name="action_dismiss">Dismiss</string>
+    <string name="action_play">Play</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_stop">Stop</string>
+    <string name="action_record">Record</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_close">Close</string>
+    <string name="action_done">Done</string>
+    <string name="action_review_again">Review again</string>
+    <string name="action_mark_memorised">Mark as memorised</string>
+    <string name="action_unmark_memorised">Unmark</string>
+    <string name="action_recite">Recite</string>
+    <string name="action_search">Search</string>
+    <string name="loading">Loading…</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_offline">You are offline. Showing cached content.</string>
+
+    <!-- Home -->
+    <string name="home_title">Today</string>
+    <string name="home_streak_card_title">Current streak</string>
+    <string name="home_streak_value_days">%1$d days</string>
+    <string name="home_streak_zero">Start your streak today</string>
+    <string name="home_daily_goal_title">Daily goal</string>
+    <string name="home_daily_goal_progress">%1$d of %2$d ayahs reviewed</string>
+    <string name="home_recommendations_title">Recommended for you</string>
+    <string name="home_recommendations_empty">All caught up. Try memorising a new ayah.</string>
+    <string name="home_continue">Continue</string>
+    <string name="home_recommendation_title_format">Surah %1$d • Ayah %2$d</string>
+
+    <!-- Surahs -->
+    <string name="surahs_title">Surahs</string>
+    <string name="surahs_search_hint">Search Surahs</string>
+    <string name="surahs_meta_format">%1$s • %2$d ayahs</string>
+    <string name="surahs_empty">No Surahs match your search.</string>
+
+    <!-- Surah detail -->
+    <string name="surah_detail_reciter_label">Reciter</string>
+    <string name="surah_detail_play_all">Play all</string>
+    <string name="surah_detail_no_audio">No audio available offline for this Surah.</string>
+    <string name="ayah_number_format">Ayah %1$d</string>
+    <string name="ayah_action_play">Play ayah</string>
+    <string name="ayah_action_recite">Recite ayah</string>
+    <string name="ayah_action_toggle_memorised">Toggle memorised</string>
+
+    <!-- Recitation -->
+    <string name="recitation_sheet_title">Recite ayah</string>
+    <string name="recitation_prompt">Tap to record, tap again to stop</string>
+    <string name="recitation_test_mode">Test mode (hide expected text)</string>
+    <string name="recitation_recording">Recording… %1$s</string>
+    <string name="recitation_processing">Analysing your recitation…</string>
+    <string name="recitation_result_title">Your recitation</string>
+    <string name="recitation_score_label">Accuracy</string>
+    <string name="recitation_score_value">%1$d%%</string>
+    <string name="recitation_mistake_count">%1$d mistakes</string>
+    <string name="recitation_mistake_legend_missing">Missing</string>
+    <string name="recitation_mistake_legend_extra">Extra</string>
+    <string name="recitation_mistake_legend_substituted">Substituted</string>
+    <string name="recitation_perfect">Perfect — no mistakes detected.</string>
+    <string name="recitation_permission_required">Microphone permission is required to record.</string>
+    <string name="recitation_recogniser_unavailable">Speech recognition is not available on this device.</string>
+    <string name="recitation_no_speech">No speech detected. Try again in a quiet environment.</string>
+
+    <!-- Tracker -->
+    <string name="tracker_title">Tracker</string>
+    <string name="tracker_tab_memorised">Memorised</string>
+    <string name="tracker_tab_due">Due</string>
+    <string name="tracker_tab_weak">Weak</string>
+    <string name="tracker_empty_memorised">You have not memorised any ayahs yet.</string>
+    <string name="tracker_empty_due">Nothing is due today. Take a break, or memorise something new.</string>
+    <string name="tracker_empty_weak">No weak ayahs detected. Excellent recitation.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_reciter_title">Default reciter</string>
+    <string name="settings_reciter_summary">Used when playing ayah audio</string>
+    <string name="settings_reminder_title">Daily reminder</string>
+    <string name="settings_reminder_summary">Notify me at this time about due revisions</string>
+    <string name="settings_reminder_test_action">Send test notification</string>
+    <string name="settings_reminder_permission_denied">Notification permission required. Enable it in system settings.</string>
+    <string name="settings_goal_title">Daily goal</string>
+    <string name="settings_goal_summary">%1$d ayahs per day</string>
+    <string name="settings_dark_mode_title">Dark mode</string>
+    <string name="settings_dark_mode_summary">Use the system theme</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_revision_name">Revision reminders</string>
+    <string name="notif_channel_revision_description">Daily reminders that you have ayahs due to revise.</string>
+    <string name="notif_revision_title">Revisions due today</string>
+    <string name="notif_revision_body_format">%1$d ayahs are ready for revision.</string>
 </resources>
