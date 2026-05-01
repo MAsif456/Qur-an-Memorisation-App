@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recitation_sheet_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/space_default"
+    android:background="@color/surface_default">
+
+    <View
+        android:layout_width="@dimen/bottom_sheet_handle_width"
+        android:layout_height="@dimen/bottom_sheet_handle_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/space_half"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/recitation_sheet_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/recitation_sheet_title"
+        android:textAppearance="?attr/textAppearanceTitleLarge" />
+
+    <TextView
+        android:id="@+id/recitation_expected_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_default"
+        android:textAppearance="@style/TextAppearance.QM.Arabic"
+        tools:ignore="RtlSymmetry"
+        xmlns:tools="http://schemas.android.com/tools" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/recitation_test_mode_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_default"
+        android:text="@string/recitation_test_mode" />
+
+    <com.example.mob_dev_portfolio.ui.recitation.WaveformView
+        android:id="@+id/recitation_waveform"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/waveform_height"
+        android:layout_marginTop="@dimen/space_double" />
+
+    <TextView
+        android:id="@+id/recitation_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_default"
+        android:gravity="center"
+        android:text="@string/recitation_prompt"
+        android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/recitation_record_button"
+        style="@style/Widget.QM.Button.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_default"
+        android:text="@string/action_record" />
+
+    <ProgressBar
+        android:id="@+id/recitation_processing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_default"
+        android:visibility="gone" />
+</LinearLayout>
