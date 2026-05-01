@@ -1,0 +1,83 @@
+build:
+  maxIssues: 0
+
+complexity:
+  active: true
+  LongMethod:
+    active: true
+    threshold: 60
+  LongParameterList:
+    active: true
+    functionThreshold: 8
+    constructorThreshold: 10
+  TooManyFunctions:
+    active: true
+    thresholdInClasses: 18
+    thresholdInFiles: 20
+  CyclomaticComplexMethod:
+    active: true
+    threshold: 22
+
+style:
+  active: true
+  LoopWithTooManyJumpStatements:
+    active: false
+  MagicNumber:
+    active: true
+    ignoreNumbers: ['-1', '0', '1', '2', '3', '4', '5', '10', '100', '1000', '60', '24']
+    ignoreEnums: true
+    ignoreAnnotation: true
+    ignoreCompanionObjectPropertyDeclaration: true
+    ignoreNamedArgument: true
+    ignoreHashCodeFunction: true
+    ignorePropertyDeclaration: true
+  MaxLineLength:
+    active: true
+    maxLineLength: 140
+  WildcardImport:
+    active: true
+    excludeImports: []
+  ReturnCount:
+    active: true
+    max: 7
+  UnusedPrivateMember:
+    active: true
+  ForbiddenComment:
+    active: false
+
+naming:
+  active: true
+  FunctionNaming:
+    active: true
+    functionPattern: '[a-z][a-zA-Z0-9]*'
+  TopLevelPropertyNaming:
+    active: true
+    constantPattern: '[A-Z][_A-Z0-9]*'
+  # The Android module name `mob_dev_portfolio` is fixed by the assignment brief,
+  # forcing the package to contain an underscore. Disable both naming variants so
+  # the single legitimate divergence does not drown out other findings.
+  PackageNaming:
+    active: false
+
+empty-blocks:
+  active: true
+  EmptyFunctionBlock:
+    active: true
+    ignoreOverridden: true
+
+potential-bugs:
+  active: true
+
+formatting:
+  active: true
+  android: true
+  autoCorrect: false
+  MaximumLineLength:
+    active: true
+    maxLineLength: 140
+  Filename:
+    active: true
+  FinalNewline:
+    active: true
+  PackageName:
+    active: false

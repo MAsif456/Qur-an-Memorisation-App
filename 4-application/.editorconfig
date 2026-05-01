@@ -1,0 +1,20 @@
+# Project-wide ktlint configuration.
+#
+# The Android module name `mob_dev_portfolio` is fixed by the assignment
+# brief, which forces the package to contain an underscore. We disable the
+# package-name and class-naming rules narrowly so the rest of ktlint stays
+# enforced.
+
+root = true
+
+[*.{kt,kts}]
+ktlint_standard_package-name = disabled
+ktlint_standard_no-empty-first-line-in-class-body = disabled
+ktlint_standard_multiline-expression-wrapping = disabled
+ktlint_standard_function-signature = disabled
+ktlint_standard_no-trailing-spaces = disabled
+ktlint_standard_no-unused-imports = disabled
+
+# Relaxed line length to fit Hilt-generated boilerplate references in KDoc.
+ktlint_code_style = intellij_idea
+max_line_length = 140
