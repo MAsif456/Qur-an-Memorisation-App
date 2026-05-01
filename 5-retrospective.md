@@ -4,8 +4,8 @@
 Student ID: `C23042139`
 
 The application delivered the core functionality set out at the start: searchable Surah browsing,
-verse-level memorisation tracking, spaced-repetition revision, audio playback, AI-assisted recitation 
-analysis with mistake highlighting, and a recommendations engine on the Home screen.
+verse-level memorisation tracking, spaced-repetition revision, audio playback, AI-powered speech recognition combined with recitation 
+analysis and mistake highlighting, and a recommendations engine on the Home screen.
 
 The most significant difficulty involved the on-device Speech Recogniser, which produced inconsistent
 transcription quality that varied with ambient noise, recitation pace, and apparent fluctuations in
