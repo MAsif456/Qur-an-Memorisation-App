@@ -1,16 +1,30 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Theme.Mobdevportfolio" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+
+    <style name="Theme.QuranMemoriser" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        <item name="colorPrimaryContainer">@color/brand_primary_dark</item>
+        <item name="colorOnPrimaryContainer">@color/text_primary</item>
+        <item name="colorSecondary">@color/brand_secondary</item>
+        <item name="colorOnSecondary">@color/text_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/brand_secondary_dark</item>
+        <item name="colorOnSecondaryContainer">@color/text_primary</item>
+        <item name="colorSurface">@color/surface_default</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurfaceVariant">@color/surface_subtle</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorError">@color/status_error</item>
+        <item name="colorOutline">@color/divider</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/surface_default</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:navigationBarColor">@color/surface_default</item>
+        <item name="android:windowBackground">@color/surface_default</item>
+
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.QM.Headline</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.QM.Title</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.QM.Body</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.QM.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.QM.Label</item>
     </style>
+
 </resources>
