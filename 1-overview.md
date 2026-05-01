@@ -9,7 +9,7 @@ motivation without visible progress, and being unable to self-correct recitation
 a teacher present. The app responds with four connected features. A spaced-repetition tracker 
 schedules revisions at expanding intervals so verses are reviewed before they are forgotten
 (Cepeda et al. 2006). A streak and daily-goal system on the Home screen makes consistency
-visible. An AI-assisted recitation analyser records the user, transcribes the audio on-device 
+visible. An AI-powered speech recognition feature records the user, transcribes the audio on-device 
 using Android's Arabic speech recogniser, compares it against the expected verse using a word-level
 Levenshtein diff, and highlights missing, extra, or substituted words. A recommendations engine 
 combines revision due-dates with mistake history to suggest the next verse to work on.
