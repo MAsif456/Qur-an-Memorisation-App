@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Night-mode overrides -->
+    <color name="brand_primary">#80E27E</color>
+    <color name="brand_primary_dark">#4C8C4A</color>
+    <color name="brand_primary_light">#B7F2A6</color>
+    <color name="brand_secondary">#F8D69E</color>
+    <color name="brand_secondary_dark">#C5A572</color>
+    <color name="brand_secondary_light">#FCE4B6</color>
+
+    <color name="surface_default">#121212</color>
+    <color name="surface_subtle">#1E1E1E</color>
+    <color name="surface_elevated">#2A2A2A</color>
+    <color name="surface_overlay">#0E3812</color>
+
+    <color name="text_primary">#F5F5F5</color>
+    <color name="text_secondary">#BDBDBD</color>
+    <color name="text_disabled">#757575</color>
+    <color name="text_on_primary">#0E3812</color>
+    <color name="text_on_secondary">#1A1A1A</color>
+
+    <color name="divider">#424242</color>
+</resources>
